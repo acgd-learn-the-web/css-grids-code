@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  main";
+}
+
+header {
+  background-color: hotpink;
+  grid-area: header;
+}
+
+main {
+  background-color: mistyrose;
+  grid-area: main;
+}
+
+aside {
+  background-color: deeppink;
+  grid-area: sidebar;
+}
+
+footer {
+  background-color: pink;
+  grid-area: footer;
+}
